@@ -1,7 +1,8 @@
-import $ from 'jquery';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import './style.scss';
+const App = () => {
+  return <div>All the React are belong to us!</div>;
+};
 
-$(document).ready(() => {
-  $('#main').html('hello');
-});
+ReactDOM.render(<App />, document.getElementById('main'));
