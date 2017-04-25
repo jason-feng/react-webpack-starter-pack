@@ -9,7 +9,7 @@
         "strict": 0,
         "quotes": [2, "single"],
         "no-else-return": 0,
-        "new-cap": ["error", {"capIsNewExceptions": ["Router"]}],
+        "new-cap": 0,
         "no-console": 0,
         "import/no-unresolved": [2, { "commonjs": true}],
         "no-unused-vars": ["error", { "vars": "all", "args": "none" }],
@@ -19,13 +19,21 @@
         "one-var-declaration-per-line": ["error", "initializations"],
         "max-len": ["error", 200],
         "no-extra-parens": 0,
+        "jsx-a11y/no-static-element-interactions": 0,
         "no-restricted-syntax": [
           0,
           "DebuggerStatement"
         ],
-        "no-debugger": "warn"
+        "no-debugger": "warn",
+        "react/forbid-prop-types": 0,
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/prop-types": 0
     },
+    "plugins": [
+        "react"
+    ],
     "ecmaFeatures": {
+        "jsx": true,
         "modules": true
     }
 }

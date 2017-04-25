@@ -1,5 +1,4 @@
 const path = require('path');
-
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
@@ -10,6 +9,7 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = {
   entry: ['./src'],
+  devtool: 'inline-source-map',
   output: {
     path: path.join(__dirname, 'public/build'),
     publicPath: '/build/',
